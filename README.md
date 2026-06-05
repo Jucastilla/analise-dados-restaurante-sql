@@ -158,16 +158,10 @@ Durante o desenvolvimento deste projeto foram aplicados conceitos relacionados a
 
 ## Arquivos do Projeto
 
-📄 definicao.sql
-
-📄 manipulacao.sql
-
-📄 consulta.sql
-
-📄 condicional.sql
-
-📄 agregacao.sql
-
-📄 multiplas_tabelas.sql
-
-📄 consultas_avancadas.sql
+- 📄 [Definição do Banco](sql/definicao.sql)
+- 📄 [Manipulação de Dados](sql/manipulacao.sql)
+- 📄 [Consultas Básicas](sql/consulta.sql)
+- 📄 [Consultas Condicionais](sql/condicional.sql)
+- 📄 [Funções de Agregação](sql/agregacao.sql)
+- 📄 [Relacionamento entre Tabelas](sql/multiplas_tabelas.sql)
+- 📄 [Consultas Avançadas](sql/consultas_avancadas.sql)

@@ -1,4 +1,4 @@
-# Análise de Dados e Gestão de Restaurante com SQL
+# Análise de Dados com SQL
 
 ## Sobre o Projeto
 

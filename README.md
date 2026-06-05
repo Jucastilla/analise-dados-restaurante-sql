@@ -125,21 +125,6 @@ Função que compara o valor de um pedido com a média geral dos pedidos cadastr
 
 Utilização do comando EXPLAIN para avaliação da execução das consultas e compreensão do plano de acesso aos dados.
 
-## Principais Aprendizados
-
-Durante o desenvolvimento deste projeto foram aplicados conceitos relacionados a:
-
-* Modelagem Relacional;
-* SQL Básico e Avançado;
-* Integridade Referencial;
-* Funções de Agregação;
-* Views;
-* Stored Functions;
-* Joins;
-* Otimização de Consultas;
-* Tratamento de Dados;
-* Análise de Dados em Banco Relacional.
-
 ## Habilidades Demonstradas
 
 * SQL

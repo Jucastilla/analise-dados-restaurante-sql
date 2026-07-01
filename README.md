@@ -2,9 +2,9 @@
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido utilizando MySQL com o objetivo de simular a estrutura de banco de dados de um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
+Este projeto foi desenvolvido utilizando MySQL com o objetivo de simular a estrutura de um banco de dados para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
 
-O trabalho contemplou desde a modelagem das tabelas até a construção de consultas analíticas, funções armazenadas, views e análises de desempenho, simulando cenários reais de gestão e tomada de decisão.
+O projeto contemplou desde a modelagem de dados até a construção de consultas analíticas, Stored Procedures, Views e análises de desempenho, simulando cenários reais de gestão e apoio à tomada de decisão.
 
 ## Etapas Desenvolvidas
 

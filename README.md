@@ -8,7 +8,9 @@ Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBA
 
 O desenvolvimento foi realizado utilizando **MySQL** e **MySQL Workbench**, contemplando desde a modelagem e criação do banco de dados até a construção de consultas analíticas, Stored Functions, Views e análises de desempenho.
 
-O banco de dados foi estruturado com tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos, permitindo aplicar diferentes recursos de SQL ao longo do projeto.
+O banco de dados utilizado no projeto foi construído diretamente no MySQL por meio dos próprios scripts SQL, sem utilização de uma base de dados externa. Foram criadas tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos, e os registros utilizados nas análises foram inseridos diretamente nessas tabelas durante o desenvolvimento do projeto.
+
+Dessa forma, os scripts disponíveis no repositório contemplam tanto a criação e estruturação do banco quanto a inserção, manipulação e análise dos dados.
 
 ## Objetivo
 

@@ -173,7 +173,7 @@ Arquivo responsável pela definição e estruturação do banco de dados.
 
 📄 [Manipulação de Dados](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/manipulacao.sql)
 
-Arquivo contendo as operações de manipulação dos registros.
+Arquivo contendo a inserção dos registros utilizados no banco de dados, além das operações de consulta, atualização e exclusão realizadas durante o projeto.
 
 📄 [Consultas Básicas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consulta.sql)
 

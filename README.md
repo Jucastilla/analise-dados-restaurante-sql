@@ -169,7 +169,7 @@ Os arquivos desenvolvidos durante o projeto estão organizados na pasta `sql`, s
 
 📄 [Definição do Banco](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/definicao.sql)
 
-Arquivo responsável pela definição e estruturação do banco de dados.
+Arquivo responsável pela criação e estruturação do banco de dados `restaurante`, incluindo a definição das tabelas, chaves primárias, chaves estrangeiras e relacionamentos utilizados no projeto.
 
 📄 [Manipulação de Dados](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/manipulacao.sql)
 
@@ -177,20 +177,20 @@ Arquivo contendo a inserção dos registros utilizados no banco de dados, além 
 
 📄 [Consultas Básicas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consulta.sql)
 
-Arquivo contendo as consultas para recuperação e exploração dos dados.
+Arquivo contendo consultas para recuperação e exploração dos registros do banco de dados, utilizando recursos como filtros, ordenação, limitação de resultados e busca por padrões.
 
 📄 [Consultas Condicionais](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/condicional.sql)
 
-Arquivo contendo consultas com aplicação de condições lógicas.
+Arquivo contendo consultas com aplicação de condições lógicas para filtragem, tratamento e classificação dos dados, utilizando operadores e estruturas condicionais do SQL.
 
 📄 [Funções de Agregação](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/agregacao.sql)
 
-Arquivo contendo as consultas e análises realizadas com funções de agregação.
+Arquivo contendo consultas analíticas com funções de agregação e agrupamento para geração de indicadores, estatísticas e análises sobre clientes, pedidos, produtos e fornecedores.
 
 📄 [Relacionamento entre Tabelas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/multiplas_tabelas.sql)
 
-Arquivo contendo as consultas envolvendo o relacionamento entre múltiplas tabelas.
+Arquivo contendo consultas com JOINs para integrar informações das diferentes tabelas do banco e realizar análises envolvendo clientes, funcionários, produtos e pedidos.
 
 📄 [Consultas Avançadas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consultas_avancadas.sql)
 
-Arquivo contendo a View, funções armazenadas e análise de performance desenvolvidas no projeto.
+Arquivo contendo os recursos avançados desenvolvidos no projeto, incluindo a View `resumo_pedido`, funções armazenadas e utilização do `EXPLAIN` para análise da execução das consultas.

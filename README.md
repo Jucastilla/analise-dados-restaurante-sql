@@ -4,9 +4,11 @@
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido utilizando **MySQL** com o objetivo de simular a estrutura de um banco de dados para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
+Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBAC**, com o objetivo de simular a estrutura de um banco de dados para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
 
-O projeto contemplou desde a modelagem de dados até a construção de consultas analíticas, Stored Functions, Views e análises de desempenho, simulando cenários de gestão e apoio à tomada de decisão.
+O desenvolvimento foi realizado utilizando **MySQL** e **MySQL Workbench**, contemplando desde a modelagem e criação do banco de dados até a construção de consultas analíticas, Stored Functions, Views e análises de desempenho.
+
+O banco de dados foi estruturado com tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos, permitindo aplicar diferentes recursos de SQL ao longo do projeto.
 
 ## Objetivo
 

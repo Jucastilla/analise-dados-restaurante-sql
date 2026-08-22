@@ -1,6 +1,4 @@
-# Projeto de Análise de Dados | SQL
-
-## Análise de Dados de Restaurante com MySQL
+# Análise de Dados de Restaurante
 
 ## Sobre o Projeto
 

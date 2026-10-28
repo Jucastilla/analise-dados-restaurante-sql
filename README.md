@@ -1,24 +1,22 @@
 # Análise de Dados de Restaurante
 
-## Sobre o Projeto
+## Contexto
 
-Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBAC**, com o objetivo de simular a estrutura de um banco de dados para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
+Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBAC**, utilizando **MySQL** e **MySQL Workbench** para simular um banco de dados de restaurante.
 
-O desenvolvimento foi realizado utilizando **MySQL** e **MySQL Workbench**, contemplando desde a modelagem e criação do banco de dados até a construção de consultas analíticas, Stored Functions, Views e análises de desempenho.
+A base foi construída diretamente no MySQL por meio de scripts SQL, sem utilização de uma base de dados externa. Foram criadas tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos.
 
-O banco de dados utilizado no projeto foi construído diretamente no MySQL por meio dos próprios scripts SQL, sem utilização de uma base de dados externa. Foram criadas tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos, e os registros utilizados nas análises foram inseridos diretamente nessas tabelas durante o desenvolvimento do projeto.
-
-Dessa forma, os scripts disponíveis no repositório contemplam tanto a criação e estruturação do banco quanto a inserção, manipulação e análise dos dados.
+Os registros utilizados nas análises foram inseridos nessas tabelas durante o desenvolvimento do projeto.
 
 ## Objetivo
 
-Simular a estrutura de um banco de dados para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenamento, manipulação e análise de dados.
+Estruturar um banco de dados relacional para um restaurante e aplicar conceitos fundamentais e avançados de SQL para armazenar, manipular e analisar os dados.
 
-O projeto contempla a modelagem do banco de dados, manipulação de registros, recuperação de informações, aplicação de condições lógicas, funções de agregação, relacionamento entre múltiplas tabelas e utilização de recursos avançados do MySQL.
+O projeto teve como objetivo trabalhar a modelagem do banco, a manutenção de registros, a recuperação de informações, a aplicação de condições lógicas, as funções de agregação e o relacionamento entre múltiplas tabelas, além de explorar Views, funções armazenadas e planos de execução de consultas.
 
-## Etapas Desenvolvidas
+## Desenvolvimento
 
-### 1. Definição da Estrutura do Banco de Dados
+### Modelagem e Criação do Banco de Dados
 
 Foi realizada a modelagem e criação do banco de dados, incluindo tabelas relacionadas a:
 
@@ -28,48 +26,46 @@ Foi realizada a modelagem e criação do banco de dados, incluindo tabelas relac
 - Pedidos;
 - Informações complementares dos produtos.
 
-Também foram implementadas:
+Para estruturar os relacionamentos e a integridade dos dados, foram implementadas:
 
 - Chaves primárias;
 - Chaves estrangeiras;
 - Relacionamentos entre tabelas;
 - Regras de integridade referencial.
 
-### 2. Manipulação de Dados
+### Inserção e Manipulação de Dados
 
-Foram executadas operações de inserção e manutenção dos registros do banco de dados, permitindo a simulação de um ambiente operacional de restaurante.
+Os registros foram inseridos diretamente no banco por meio de scripts SQL, permitindo simular um ambiente operacional de restaurante.
 
-As atividades envolveram:
+Também foram realizadas atividades de:
 
-- Inclusão de registros;
 - Atualização de informações;
 - Exclusão de dados;
 - Manutenção da consistência das tabelas.
 
-### 3. Consultas e Recuperação de Dados
+### Consultas e Recuperação de Dados
 
-Foram desenvolvidas consultas para extração de informações relevantes utilizando:
+Foram desenvolvidas consultas para recuperar e explorar informações do banco utilizando:
 
 - Filtros com `WHERE`;
 - Ordenação com `ORDER BY`;
 - Limitação de resultados com `LIMIT`;
-- Busca por padrões utilizando `LIKE`;
-- Criação de tabelas auxiliares para backup de informações.
+- Busca por padrões com `LIKE`.
 
-### 4. Aplicação de Condições Lógicas
+Também foram criadas tabelas auxiliares para backup de informações.
 
-Foram utilizados recursos de lógica condicional para análise e tratamento dos dados, incluindo:
+### Aplicação de Condições Lógicas
+
+Foram utilizados recursos de lógica condicional para filtrar, tratar e classificar os dados:
 
 - Operadores `AND` e `OR`;
-- `IN` e `BETWEEN`;
+- Operadores `IN` e `BETWEEN`;
 - Tratamento de valores nulos com `COALESCE`;
-- Estruturas `CASE` para classificação de informações.
+- Classificação de informações com `CASE`.
 
-### 5. Análise de Dados com Funções de Agregação
+### Análises com Agregações e Ranqueamento
 
-Foram aplicadas funções estatísticas para geração de indicadores de negócio.
-
-Entre as análises realizadas:
+Foram desenvolvidas consultas para analisar:
 
 - Total de pedidos realizados;
 - Quantidade de clientes únicos;
@@ -77,23 +73,17 @@ Entre as análises realizadas:
 - Produtos mais caros;
 - Média de preço por categoria;
 - Quantidade de produtos por fornecedor;
-- Identificação de clientes com apenas um pedido.
+- Clientes com apenas um pedido.
 
-Também foram utilizados:
+As consultas utilizaram `COUNT()`, `AVG()`, `MIN()` e `MAX()`, além de agrupamentos com `GROUP BY` e filtros com `HAVING`.
 
-- `GROUP BY`;
-- `HAVING`;
-- `DENSE_RANK()`;
-- `COUNT()`;
-- `AVG()`;
-- `MIN()`;
-- `MAX()`.
+Também foi utilizada a função de ranqueamento `DENSE_RANK()`.
 
-### 6. Relacionamento entre Múltiplas Tabelas
+### Relacionamento entre Múltiplas Tabelas
 
-Foram desenvolvidas consultas utilizando JOINs para integrar informações de diferentes entidades do sistema.
+Foram desenvolvidas consultas com JOINs para integrar informações de diferentes tabelas.
 
-As análises permitiram visualizar:
+Essas consultas permitiram visualizar:
 
 - Pedidos realizados por clientes;
 - Funcionários responsáveis pelos atendimentos;
@@ -103,92 +93,85 @@ As análises permitiram visualizar:
 - Ranking de clientes por quantidade de pedidos;
 - Valor total dos pedidos.
 
-### 7. Consultas Avançadas
+### Criação da View Analítica
 
-Foram implementados recursos avançados do MySQL para ampliar a capacidade analítica do banco.
+Foi criada a View `resumo_pedido`, consolidando informações de clientes, funcionários, produtos, pedidos e valor total das vendas.
 
-#### View Analítica
+### Desenvolvimento de Funções Armazenadas
 
-Criação da View `resumo_pedido`, consolidando informações de:
+Foram desenvolvidas duas funções armazenadas:
 
-- Clientes;
-- Funcionários;
-- Produtos;
-- Pedidos;
-- Valor total das vendas.
+#### `BuscaIngredientesProduto()`
 
-#### Funções Armazenadas
+Localiza e retorna os ingredientes de um produto específico.
 
-##### BuscaIngredientesProduto()
+#### `mediaPedido()`
 
-Função responsável por localizar e retornar os ingredientes de um produto específico.
-
-##### mediaPedido()
-
-Função que compara o valor de um pedido com a média geral dos pedidos cadastrados, classificando o resultado como:
+Compara o valor de um pedido com a média geral dos pedidos cadastrados e classifica o resultado como:
 
 - Acima da média;
 - Abaixo da média;
 - Igual à média.
 
-#### Análise de Performance
+### Análise da Execução das Consultas
 
-Utilização do comando `EXPLAIN` para avaliação da execução das consultas e compreensão do plano de acesso aos dados.
+Foi utilizado o comando `EXPLAIN` para avaliar a execução das consultas e compreender o plano de acesso aos dados.
 
-### 8. Conclusões
+## Resultados
 
-O projeto contemplou a criação e exploração de um banco de dados relacional para um restaurante utilizando MySQL.
+Foi construído um banco de dados relacional para simular a operação de um restaurante, com estrutura, relacionamentos e registros definidos por scripts SQL.
 
-Foram aplicados recursos de SQL para definição da estrutura do banco, manipulação e recuperação de dados, aplicação de condições lógicas, funções de agregação e relacionamento entre múltiplas tabelas.
+As consultas desenvolvidas permitiram explorar informações sobre clientes, funcionários, produtos e pedidos, incluindo quantidade de pedidos, preços dos produtos, clientes sem pedidos e ranking de clientes por quantidade de pedidos.
 
-Também foram utilizados recursos avançados do MySQL, incluindo Views, funções armazenadas e análise de desempenho das consultas com `EXPLAIN`.
+Também foram entregues a View `resumo_pedido` e as funções armazenadas `BuscaIngredientesProduto()` e `mediaPedido()`, além da análise de planos de execução com `EXPLAIN`.
+
+O projeto permitiu aplicar conceitos de modelagem, manipulação e análise de dados em MySQL, desde a criação das tabelas até a utilização de recursos avançados de consulta.
 
 ## Habilidades Demonstradas
 
-- SQL
-- MySQL
-- MySQL Workbench
-- Banco de Dados Relacional
-- Modelagem de Dados
-- Data Analysis
-- Data Querying
-- Joins
-- Views
-- Stored Functions
-- Data Manipulation
-- Business Analytics
-- Query Optimization
+- SQL;
+- MySQL;
+- MySQL Workbench;
+- Banco de dados relacional;
+- Modelagem de dados;
+- Manipulação de dados;
+- Consulta e análise de dados;
+- Condições lógicas;
+- Funções de agregação;
+- Relacionamento entre tabelas com JOINs;
+- Views;
+- Funções armazenadas;
+- Análise de indicadores de negócio;
+- Análise de planos de execução com `EXPLAIN`.
 
 ## Arquivos do Projeto
 
-Os arquivos desenvolvidos durante o projeto estão organizados na pasta `sql`, separados de acordo com as diferentes etapas da construção e análise do banco de dados.
+Os arquivos estão organizados na pasta `sql`, separados de acordo com as etapas de construção e análise do banco de dados.
 
-### Scripts SQL
+### [Definição do Banco](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/definicao.sql)
 
-📄 [Definição do Banco](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/definicao.sql)
+Criação e estruturação do banco de dados `restaurante`, incluindo tabelas, chaves primárias, chaves estrangeiras e relacionamentos.
 
-Arquivo responsável pela criação e estruturação do banco de dados `restaurante`, incluindo a definição das tabelas, chaves primárias, chaves estrangeiras e relacionamentos utilizados no projeto.
+### [Manipulação de Dados](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/manipulacao.sql)
 
-📄 [Manipulação de Dados](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/manipulacao.sql)
+Inserção dos registros utilizados no banco, além das operações de consulta, atualização e exclusão realizadas durante o projeto.
 
-Arquivo contendo a inserção dos registros utilizados no banco de dados, além das operações de consulta, atualização e exclusão realizadas durante o projeto.
+### [Consultas Básicas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consulta.sql)
 
-📄 [Consultas Básicas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consulta.sql)
+Consultas para recuperação e exploração dos registros, utilizando filtros, ordenação, limitação de resultados e busca por padrões.
 
-Arquivo contendo consultas para recuperação e exploração dos registros do banco de dados, utilizando recursos como filtros, ordenação, limitação de resultados e busca por padrões.
+### [Consultas Condicionais](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/condicional.sql)
 
-📄 [Consultas Condicionais](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/condicional.sql)
+Consultas com condições lógicas para filtragem, tratamento e classificação dos dados.
 
-Arquivo contendo consultas com aplicação de condições lógicas para filtragem, tratamento e classificação dos dados, utilizando operadores e estruturas condicionais do SQL.
+### [Funções de Agregação](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/agregacao.sql)
 
-📄 [Funções de Agregação](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/agregacao.sql)
+Consultas com funções de agregação e agrupamento para geração de indicadores, estatísticas e análises sobre clientes, pedidos, produtos e fornecedores.
 
-Arquivo contendo consultas analíticas com funções de agregação e agrupamento para geração de indicadores, estatísticas e análises sobre clientes, pedidos, produtos e fornecedores.
+### [Relacionamento entre Tabelas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/multiplas_tabelas.sql)
 
-📄 [Relacionamento entre Tabelas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/multiplas_tabelas.sql)
+Consultas com JOINs para integrar informações das tabelas e realizar análises envolvendo clientes, funcionários, produtos e pedidos.
 
-Arquivo contendo consultas com JOINs para integrar informações das diferentes tabelas do banco e realizar análises envolvendo clientes, funcionários, produtos e pedidos.
+### [Consultas Avançadas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consultas_avancadas.sql)
 
-📄 [Consultas Avançadas](https://github.com/Jucastilla/analise-dados-restaurante-sql/blob/main/sql/consultas_avancadas.sql)
-
-Arquivo contendo os recursos avançados desenvolvidos no projeto, incluindo a View `resumo_pedido`, funções armazenadas e utilização do `EXPLAIN` para análise da execução das consultas.
+Recursos avançados desenvolvidos no projeto, incluindo a View `resumo_pedido`, funções armazenadas e utilização do `EXPLAIN` para análise da execução das consultas.

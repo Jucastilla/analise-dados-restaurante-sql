@@ -2,9 +2,9 @@
 
 ## Contexto
 
-Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBAC**, utilizando **MySQL** e **MySQL Workbench** para simular um banco de dados de restaurante.
+Este projeto foi desenvolvido durante a formação em **Análise de Dados da EBAC**, com a proposta de simular um banco de dados para um restaurante. Foi utilizado o **MySQL** como sistema de gerenciamento de banco de dados e o **MySQL Workbench** como ferramenta para modelagem e execução dos scripts SQL.
 
-A base foi construída diretamente no MySQL por meio de scripts SQL, sem utilização de uma base de dados externa. Foram criadas tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos.
+A base foi construída por meio de scripts SQL, sem utilização de uma base de dados externa. Foram criadas tabelas relacionadas a clientes, funcionários, produtos, pedidos e informações complementares dos produtos.
 
 Os registros utilizados nas análises foram inseridos nessas tabelas durante o desenvolvimento do projeto.
 
